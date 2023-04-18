@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#can be run as curl https://www.example.com/install.sh | sudo bash
+#can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_fahclient | sudo bash
 
 # download all fahclient bits
 wget https://download.foldingathome.org/releases/public/release/fahclient/debian-testing-64bit/v7.4/fahclient_7.4.4_amd64.deb
