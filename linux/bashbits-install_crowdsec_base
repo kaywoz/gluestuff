@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_fahclient | sudo bash
+
+# download all crowdsec bits
+curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
+
+#install crowdsec
+apt install crowdsec
+
+#install crowdsec bouncers
+apt install crowdsec-firewall-bouncer-iptables
+cscli collections install crowdsecurity/sshd
+
+#enroll to cloud (approval-based so no YOU can't!)
+sudo cscli console enroll cldx1muq80000l4084hht3eeh
