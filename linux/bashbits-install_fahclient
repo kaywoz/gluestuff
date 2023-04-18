@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#can be run as curl https://www.example.com/install.sh | sudo bash
+
+# download all fahclient bits
+wget https://download.foldingathome.org/releases/public/release/fahclient/debian-testing-64bit/v7.4/fahclient_7.4.4_amd64.deb
+wget https://download.foldingathome.org/releases/public/release/fahcontrol/debian-testing-64bit/v7.4/fahcontrol_7.4.4-1_all.deb
+wget https://download.foldingathome.org/releases/public/release/fahviewer/debian-testing-64bit/v7.4/fahviewer_7.4.4_amd64.deb
+
+# install client
+sudo dpkg -i --force-depends fahclient_7.4.4_amd64.deb
+
+#pull gpus.txt definition file
+wget https://apps.foldingathome.org/GPUs.txt  -O /var/lib/fahclient/GPUs.txt
+
+#pull config.xml with user/team/passkey
+wget https://gist.githubusercontent.com/kaywoz/4d9bfc67e0992e3fcb979409ab9d1618/raw/a77342a6a77fdf97ccf055830e8635350c28e1f2/config.xml -O /etc/fahclient/config.xml
+
+#start in bg
+sudo /etc/init.d/FAHClient start & 
+
+#tail log file
+tail -f /var/lib/fahclient/log.txt
+
+#watch -n 2 nvidia-smi
