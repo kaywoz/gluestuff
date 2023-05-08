@@ -36,4 +36,4 @@ function Test-ADAuthentication {
 	}
 }
 
-#Test-ADAuthentication -User toto -Password passXX
+#Test-ADAuthentication -User toto -Password passXXX
