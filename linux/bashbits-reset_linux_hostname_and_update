@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#update the contents of the repositories
+sudo apt-get update -y -q
+
+#try to fix missing dependencies:
+sudo apt-get -f install -q
+
+#update all packages with new versions available:
+sudo apt-get full-upgrade -y -q
+
+#remove unnecessary packages:
+sudo apt-get autoremove -y -q
+
+#delete downloaded packages already installed:
+sudo apt-get clean -y -q
+
+#set hostname
+
+echo hostname?
+read hostname_var
+hostnamectl set-hostname $hostname_var
+
+echo setting hostname to $hostname_var and rebooting!
+
+#reboot the system:
+sleep  5
+sudo reboot
