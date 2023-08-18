@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_tailscale | sudo bash
+#can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_netdata | sudo bash
 
 #add to homeops
 sudo curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token qhu29uk7Z03__exgAewOI-B51VuyWbmPhyzxsTTFT0gyOYnIiB2AY4rXMGJdXZ7coQf2rR1xN6HGh0Ru0njcjSM9vXUr5niBa3izZ6wC3p1nggMwu4LjHeadeKpQVf_8LmQg_5c --claim-rooms 6f18f297-1b29-4fa5-b574-689299c4bdf0 --claim-url https://app.netdata.cloud
