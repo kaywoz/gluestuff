@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_crowdsec_base | sudo bash
+#can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_tailscale | sudo bash
 
 # download all tailscale bits
 curl -s curl -fsSL https://tailscale.com/install.sh | sudo bash
