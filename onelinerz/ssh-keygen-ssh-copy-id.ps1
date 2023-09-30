@@ -1,0 +1,1 @@
+ssh-keygen && cat $env:userprofile/.ssh/id_rsa.pub | ssh user@linuxserver 'cat >> .ssh/authorized_keys'
