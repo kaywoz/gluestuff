@@ -1,4 +1,4 @@
-## set in /usr/local/etc/crowdsec/notifications/discord.yaml
+## set in /usr/local/etc/crowdsec/notifications/discord.yaml for discord alert integration, test by reinjecting real alert e.g "cscli notifications reinject 278"
 
 type: http
 
