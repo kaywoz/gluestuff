@@ -3,9 +3,9 @@
 #can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_tailscale | sudo bash
 
 # download all tailscale bits
-curl -fsSL https://tailscale.com/install.sh | sudo bash
-
+curl -fsSL https://tailscale.com/install.sh | sudo tee /tmp/tailscale.sh > /dev/null
+sudo chmod +x /tmp/tailscale.sh
+sudo tailscale up --authkey tskey-auth-kTH25m2CNTRL-bNrz8HP1haXMxtbXUsbfaXrJWURs4aETU
 #run tailscale
-sudo tailscale up --authkey tskey-placeholder
 
 #Note, device approval is in effect.
