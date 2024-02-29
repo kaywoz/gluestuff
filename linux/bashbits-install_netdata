@@ -3,7 +3,4 @@
 #can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_netdata | sudo bash
 
 #add to homeops
-sudo curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token qhu29uk7Z03__exgAewOI-B51VuyWbmPhyzxsTTFT0gyOYnIiB2AY4rXMGJdXZ7coQf2rR1xN6HGh0Ru0njcjSM9vXUr5niBa3izZ6wC3p1nggMwu4LjHeadeKpQVf_8LmQg_5c --claim-rooms 6f18f297-1b29-4fa5-b574-689299c4bdf0 --claim-url https://app.netdata.cloud
-
-#add to cloudops
-#wget -O /tmp/netdata-kickstart.sh https://my-netdata.io/kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token 5vIk1p8dHenZpAMQfegxqqncjSCXlxIZpWAzdxl8W5DvA9BOydrCec5DnaN4GCa_3kueoG8YmnsEKKuiY7rRBZ7ch40MEc8_vU9CKCxenJ-yVmiCYyrHqPFjAl4dJ_Wjw1sEuRs --claim-rooms da21cc5c-6d2a-4cfe-a1d9-83eb4ec500d9 --claim-url https://app.netdata.cloud
+sudo curl https:wget -O /tmp/netdata-kickstart.sh https://get.netdata.cloud/kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token 98cLVSy-7LLBWW31O7FHSYhwIjW-lU2ZzC5VBrS_nWRusdptsLmMf7DfEkPGG38e78Gzs-_K7rVZF0gsQFbkJwFAwCd4HWEqACN05Y3r5t__pQNTrIzLJUQq7MC2C5-VAQtNXls --claim-rooms 6f18f297-1b29-4fa5-b574-689299c4bdf0 --claim-url https://app.netdata.cloud

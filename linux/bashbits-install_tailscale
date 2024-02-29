@@ -6,6 +6,6 @@
 curl -fsSL https://tailscale.com/install.sh | sudo bash
 
 #run tailscale
-sudo tailscale up
+sudo tailscale up --authkey tskey-placeholder
 
 #Note, device approval is in effect.
