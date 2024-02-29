@@ -3,4 +3,7 @@
 #can be run as curl https://raw.githubusercontent.com/kaywoz/gluestuff/main/linux/bashbits-install_netdata | sudo bash
 
 #add to homeops
-curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --nightly-channel --claim-token placeholder --claim-rooms 6f18f297-1b29-4fa5-b574-689299c4bdf0 --claim-url https://app.netdata.cloud
+curl https://get.netdata.cloud/kickstart.sh | sudo tee /tmp/netdata-kickstart.sh > /dev/null
+sudo chmod +x /tmp/netdata-kickstart.sh
+sudo /tmp/netdata-kickstart.sh --nightly-channel --claim-token 98cLVSy-7LLBWW31O7FHSYhwIjW-lU2ZzC5VBrS_nWRusdptsLmMf7DfEkPGG38e78Gzs-_K7rVZF0gsQFbkJwFAwCd4HWEqACN05Y3r5t__pQNTrIzLJUQq7MC2C5-VAQtNXls --claim-rooms 6f18f297-1b29-4fa5-b574-689299c4bdf0 --claim-url https://app.netdata.cloud
+sudo rm /tmp/netdata-kickstart.sh
