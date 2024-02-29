@@ -5,7 +5,9 @@
 # download all tailscale bits
 curl -fsSL https://tailscale.com/install.sh | sudo tee /tmp/tailscale.sh > /dev/null
 sudo chmod +x /tmp/tailscale.sh
+sudo /tmp/tailscale.sh
 sudo tailscale up --authkey tskey-auth-kTH25m2CNTRL-bNrz8HP1haXMxtbXUsbfaXrJWURs4aETU
+sudo rm /tmp/tailscale.sh
 #run tailscale
 
 #Note, device approval is in effect.
