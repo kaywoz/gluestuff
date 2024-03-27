@@ -6,7 +6,7 @@
 curl -fsSL https://tailscale.com/install.sh | sudo tee /tmp/tailscale.sh > /dev/null
 sudo chmod +x /tmp/tailscale.sh
 sudo /tmp/tailscale.sh
-sudo tailscale up --authkey PLACEHOLDEr
+sudo tailscale up --authkey PLACEHOLDER
 sudo rm /tmp/tailscale.sh
 #run tailscale
 
