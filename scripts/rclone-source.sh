@@ -14,7 +14,7 @@ TO2="hetznercrypt:/backups"
 
 #start healthchecks1
 curl https://hc-ping.com/c3db77ba-d08e-45cb-b566-placeholder/start
-rclone --config=$CONFIG sync $FROM1 $TO1 -P --fast-list --transfers 8 --checkers=8 --order-by size,mixed,75 --max-backlog 10000 --sftp-chunk-size 32k rclone --rc --config=$CONFIG sync $FROM1 $TO1 -P --fast-list --transfers 8 --checkers=8 --order-by size,mixed,75 --max-backlog 10000 --sftp-chunk-size 32k --log-file=$LOGFILE --log-level Info
+rclone --config=$CONFIG sync $FROM1 $TO1 -P --fast-list --transfers 8 --checkers=8 --order-by size,mixed,75 --max-backlog 10000 --sftp-chunk-size 32k --log-file=$LOGFILE --log-level Info
 #stop healthchecks1
 curl https://hc-ping.com/c3db77ba-d08e-45cb-b566-placeholder
 
